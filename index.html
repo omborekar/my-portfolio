@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Borekar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+          <div class="row">
+            <div class="logo">
+              <a href="#">Om Borekar</a>
+            </div>
+            <div class="mobile_btn">
+              <i class="fas fa-bars"></i>
+            </div>
+            <div class="main_menu">
+              <ul>
+                <li><a href="#profile" class="active" onclick="animateProfileSection()">Profile</a></li>
+                <li><a href="#about" onclick="animateAboutSection()">About</a></li>
+                <li><a href="#skills" onclick="animateSkillsOnLoad()">Skills</a></li>
+                <li><a href="#projects" onclick="animateProjectCards()">Projects</a></li>
+                <li><a href="#resume" onclick="animateResumeSection()">Resume</a></li>
+                <li><a href="#contact" onclick="animateContactSection()">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section id="profile">
+        <div class="container">
+          <h2>Profile</h2>
+          <div class="row">
+            <div class="col-left">
+              <p class="id-info">
+                Om Borekar<br>
+                <span>Computer Engineering Student | Aspiring AI & Software Developer</span>
+              </p>
+              <p>
+                I am a computer science student passionate about leveraging artificial intelligence and software development to design innovative and scalable solutions. My goal is to enhance user experiences and drive business success.
+              </p>
+              <p>
+                My current focus is on exploring AI technologies, full-stack development (MERN), and competitive programming.
+              </p>
+              <a href="#contact" class="btn" onclick="animateContactSection()">Get in Touch</a>
+            </div>
+            <div class="col-right">
+              <img src="logo.jpg" alt="Om Borekar" class="profile-image">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="row">
+            <div class="col-left">
+              <h3>Education</h3>
+              <p>
+                <strong>Degree:</strong> BE, Computer Engineering<br>
+                <strong>College:</strong> Sinhgad Academy of Engineering<br>
+                <strong>Duration:</strong> 2022 - 2026
+              </p>
+              <h3>Career Objective</h3>
+              <p>
+                To leverage my skills in artificial intelligence and software development to design innovative, scalable AI solutions that solve complex problems, enhance user experiences, and drive business success. Passionate about advancing AI technologies.
+              </p>
+              <h3>Extra-Curricular Activities</h3>
+              <p>
+                Active member of ACES at college, leading teams in hackathons and technical tasks. Organized events, managed projects, and fostered teamwork to solve complex problems and deliver innovative solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-carousel">
+            <div><button class="prev-btn" id="prev-btn">&lt;</button></div>
+            <div class="skills-list" id="skills-list">
+              <div class="skills-item">
+                <h3>Programming Languages</h3>
+                <p>JavaScript, Python, C++, Java</p>
+              </div>
+              <div class="skills-item">
+                <h3>Web Technologies</h3>
+                <p>HTML, CSS, Node.js</p>
+              </div>
+              <div class="skills-item">
+                <h3>Databases</h3>
+                <p>MySQL, MongoDB, NoSQL</p>
+              </div>
+              <div class="skills-item">
+                <h3>Tools</h3>
+                <p>MS-Excel, MS-Word, MS-PowerPoint, Git</p>
+              </div>
+              <div class="skills-item">
+                <h3>Languages</h3>
+                <p>English, Marathi, Hindi</p>
+              </div>
+            </div>
+            <div><button class="next-btn" id="next-btn">&gt;</button></div>
+          </div>
+        </div>
+      </section>
+           
+
+      <section id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="projects-list">
+            <div class="project-card">
+              <h3>Digital Payment Wallet System</h3>
+              <p>Developed a full-stack digital payment wallet application using the MERN stack. Features include secure user authentication, wallet management, and integrated payment gateway API.</p>
+              <a href="https://github.com/omborekar/Digital_Payment_wallet_Clone_By_Om_Borekar.git" class="btn" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+              <h3>BusEase - Online Bus Reservation System</h3>
+              <p>Built an online bus reservation system with features such as real-time seat availability and secure payments using Node.js.</p>
+              <a href="https://github.com/omborekar/BusEase_Bus_reservation_system_in_nodejs_express_html_css_js_using_HBS.git" class="btn" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+              <h3>CertiGen - Simplifying Certificate Generation</h3>
+              <p>Developed a Python-based application for bulk certificate generation and email integration with an interactive GUI built in PyQt5.</p>
+              <a href="https://github.com/omborekar/Bulk_Certificate_Generator_with_email_integration_using_python" class="btn" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+              <h3>Carbon Footprint Generator</h3>
+              <p>Created a responsive landing page with login/signup functionality and OTP verification for carbon footprint calculation.</p>
+              <a href="https://github.com/omborekar/Carbon_Footprint_Calculator_with_login_signup_otp-verification" class="btn" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume">
+        <h2>Resume</h2>
+        <div class="resume-content">
+            <div class="resume-item">
+                <h3>Education</h3>
+                <p><strong>Degree:</strong> BE, Computer Science & Engineering<br>
+                   <strong>College:</strong> Sinhgad Academy of Engineering<br>
+                   <strong>Duration:</strong> 2022 - 2026</p>
+            </div>
+            <div class="resume-item">
+                <h3>Skills</h3>
+                <p>JavaScript, Python, C++, Java, HTML, CSS, Node.js, MySQL, MongoDB</p>
+            </div>
+            <div class="resume-item">
+                <h3>Projects</h3>
+                <p><strong>Digital Payment Wallet System:</strong> MERN stack application with secure user authentication.<br>
+                   <strong>BusEase:</strong> Online bus reservation system with real-time seat availability.<br>
+                   <strong>CertiGen:</strong> Python-based bulk certificate generator with email integration.</p>
+            </div>
+            <div class="resume-item">
+                <h3>Career Objective</h3>
+                <p>To leverage my skills in artificial intelligence and software development to design innovative, scalable AI solutions that solve complex problems, enhance user experiences, and drive business success.</p>
+            </div>
+        </div>
+        <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
+    </section>
+    
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <p class="contact-intro">Feel free to reach out! I’d love to hear from you.</p>
+          <div class="contact-card">
+            <div class="contact-item">
+              <i class="icon-email"></i>
+              <p><strong>Email:</strong></p>
+              <a href="mailto:omborekar18@gmail.com">omborekar18@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="icon-linkedin"></i>
+              <p><strong>LinkedIn:</strong></p>
+              <a href="https://www.linkedin.com/in/omborekar04/" target="_blank">@omborekar04</a>
+            </div>
+            <div class="contact-item">
+              <i class="icon-github"></i>
+              <p><strong>GitHub:</strong></p>
+              <a href="https://github.com/omborekar" target="_blank">@omborekar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <p>&copy; 2025 Om Borekar. All rights reserved.</p>
+          <p>Designed with <span class="heart">&#10084;</span> by Om Borekar</p>
+          <ul class="footer-links">
+            <li><a href="#profile" onclick="animateProfileSection()">Profile</a></li>
+            <li><a href="#projects" onclick="animateProjectCards()">Projects</a></li>
+            <li><a href="#contact" onclick="animateContactSection()">Contact</a></li>
+          </ul>
+        </div>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
