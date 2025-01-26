@@ -194,16 +194,24 @@ nav li:first-child{
   }
 
   #profile .profile-image {
-    max-width: 300px; /* Adjust image size for mobile */
-    max-height:300px;
+    max-width: 150px; /* Adjust image size for mobile */
+    max-height:150px;
     margin-bottom: 20px;
   }
 
   #profile .id-info {
     font-size: 1rem;
+    text-align: center;
   }
   .profile-image{
     display:none;
+  }
+
+  .degree{
+    font-size: 25px;
+  }
+  .id-name{
+    font-size: 35px;
   }
 
   #profile .col-right .mobile-image {
