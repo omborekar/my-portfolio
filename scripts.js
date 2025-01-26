@@ -9,6 +9,7 @@ function hideSidebar(){
 
 // Profile Section Animation
 function animateProfileSection() {
+  hideSidebar()
   const colLeft = document.querySelector(".col-left");
   const colRight = document.querySelector(".col-right");
   const profileImage = document.querySelector(".profile-image");
@@ -46,6 +47,7 @@ function animateProfileSection() {
 
 // About Section Animation
 function animateAboutSection() {
+  hideSidebar()
   const colLeft = document.querySelector("#about .col-left");
   const headings = colLeft.querySelectorAll("h3");
   const paragraphs = colLeft.querySelectorAll("p");
@@ -86,6 +88,7 @@ function animateAboutSection() {
 
 // Skills Section Animation
 function animateSkillsSection() {
+  hideSidebar()
   const skillBars = document.querySelectorAll(".skill-bar");
   const skillLabels = document.querySelectorAll(".skill-label");
 
@@ -110,6 +113,7 @@ function animateSkillsSection() {
 
 // Resume Section Animation
 function animateResumeSection() {
+  hideSidebar()
   const resumeItems = document.querySelectorAll("#resume .resume-item");
   const resumeButton = document.querySelector("#resume .btn");
 
@@ -146,6 +150,7 @@ document.addEventListener("DOMContentLoaded", animateResumeSection);
 
 // Projects Section Animation
 function animateProjectCards() {
+  hideSidebar()
   const projectCards = document.querySelectorAll(".project-card");
 
   projectCards.forEach((card, index) => {
@@ -162,6 +167,7 @@ function animateProjectCards() {
 
 // Contact Section Animation
 function animateContactSection() {
+  hideSidebar()
   const contactItems = document.querySelectorAll(".contact-item");
 
   contactItems.forEach((item, index) => {
@@ -178,6 +184,7 @@ function animateContactSection() {
 
 // Skills Carousel
 function setupSkillsCarousel() {
+  hideSidebar()
   const skillsList = document.getElementById("skills-list");
   const prevBtn = document.getElementById("prev-btn");
   const nextBtn = document.getElementById("next-btn");
@@ -241,6 +248,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function animateSkillsSection() {
+  hideSidebar()
   const skillsSection = document.querySelector("#skills");
   const skillsHeading = skillsSection.querySelector("h2");
   const skillsItems = skillsSection.querySelectorAll(".skills-item");
