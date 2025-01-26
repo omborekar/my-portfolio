@@ -1,22 +1,11 @@
-$(function ($) {
-  // Mobile Menu Toggle
-  $(".mobile_btn").on("click", function () {
-    $(".main_menu").slideToggle();
-    $(".mobile_btn i").toggleClass("fa-xmark fa-xl");
-  });
-
-  // Dropdown Menu Handling on Mobile
-  if ($(window).width() < 768) {
-    $(".main_menu ul li a").on("click", function (e) {
-      const parent = $(this).parent(".has_dropdown");
-      const submenu = parent.children(".sub_menu");
-
-      submenu.css({ "padding-left": "15px" }).stop().slideToggle();
-      parent.find(".fa-angle-right").toggleClass("fa-rotate-90");
-      e.preventDefault();
-    });
-  }
-});
+function showSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'none'
+}
 
 // Profile Section Animation
 function animateProfileSection() {
@@ -284,3 +273,7 @@ function animateSkillsSection() {
 // Trigger the animation on DOMContentLoaded
 document.addEventListener("DOMContentLoaded", animateSkillsSection);
 
+document.getElementById('menu-toggle').addEventListener('click', function () {
+  const menu = document.getElementById('menu');
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+});

@@ -7,28 +7,39 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-          <div class="row">
-            <div class="logo">
-              <a href="https://omborekar.github.io/my-portfolio/">Om Borekar</a>
-            </div>
-            <div class="mobile_btn">
-              <i class="fas fa-bars"></i>
-            </div>
-            <div class="main_menu">
-              <ul>
-                <li><a href="#profile" class="active" onclick="animateProfileSection()">Profile</a></li>
-                <li><a href="#about" onclick="animateAboutSection()">About</a></li>
-                <li><a href="#skills" onclick="animateSkillsOnLoad()">Skills</a></li>
-                <li><a href="#projects" onclick="animateProjectCards()">Projects</a></li>
-                <li><a href="#resume" onclick="animateResumeSection()">Resume</a></li>
-                <li><a href="#contact" onclick="animateContactSection()">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+  <nav>
+    <ul class="sidebar" id="sidebar">
+      <li onclick="hideSidebar()">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+            <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+          </svg>
+        </a>
+      </li>
+      <li><a href="#profile" onclick="animateProfileSection()">Profile</a></li>
+      <li><a href="#about" onclick="animateAboutSection()">About</a></li>
+      <li><a href="#skills" onclick="animateSkillsOnLoad()">Skills</a></li>
+      <li><a href="#projects" onclick="animateProjectCards()">Projects</a></li>
+      <li><a href="#resume" onclick="animateResumeSection()">Resume</a></li>
+      <li><a href="#contact" onclick="animateContactSection()">Contact</a></li>
+    </ul>
+    <ul>
+      <li class="name"><a href="https://omborekar.github.io/my-portfolio/">OM BOREKAR</a></li>
+      <li class="hideOnMobile"><a href="#profile" onclick="animateProfileSection()">Profile</a></li>
+      <li class="hideOnMobile"><a href="#about" onclick="animateAboutSection()">About</a></li>
+      <li class="hideOnMobile"><a href="#skills" onclick="animateSkillsOnLoad()">Skills</a></li>
+      <li class="hideOnMobile"><a href="#projects" onclick="animateProjectCards()">Projects</a></li>
+      <li class="hideOnMobile"><a href="#resume" onclick="animateResumeSection()">Resume</a></li>
+      <li class="hideOnMobile"><a href="#contact" onclick="animateContactSection()">Contact</a></li>
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav> 
 
       <section id="profile">
         <div class="container">
@@ -48,7 +59,8 @@
               <a href="#contact" class="btn" onclick="animateContactSection()">Get in Touch</a>
             </div>
             <div class="col-right">
-              <img src="logo1.jpg" alt="Om Borekar" class="profile-image">
+              <img src="logo.jpeg" alt="Om Borekar" class="profile-image">
+              <img src="logo1.jpg" alt="Om Borekar" class="mobile-image">
             </div>
           </div>
         </div>
